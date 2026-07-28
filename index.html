@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agora — Your city's culture, all in one place</title>
+  <meta name="description" content="Agora surfaces the film screenings, talks, readings, and shows happening around you — so you never miss what's worth going to.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Agora — Your city's culture, all in one place">
+  <meta property="og:description" content="Agora surfaces the film screenings, talks, readings, and shows happening around you — so you never miss what's worth going to.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/screenshot.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <img src="assets/logo.png" alt="Agora logo" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'nav__logo-fallback',textContent:'Agora'}))">
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#locations">Locations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#hero-download" class="btn btn--filled nav__cta">Download Agora</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav__mobile" id="navMobile" aria-label="Mobile">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#locations">Locations</a>
+      <a href="#contact">Contact</a>
+      <a href="#hero-download" class="btn btn--filled">Download Agora</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__text fade-in">
+          <p class="eyebrow">Event discovery, curated</p>
+          <h1 class="hero__headline">Your city's<br><span class="cycle-word" id="cycleWord" aria-hidden="true"></span><span class="cycle-cursor" aria-hidden="true"></span><br>all in one place<span class="sr-only">Your city's lectures, films, exhibits, debates, and readings — all in one place</span></h1>
+          <p class="hero__subheadline">Agora surfaces the film screenings, talks, readings, and shows happening around you — so you never miss what's worth going to.</p>
+
+          <div class="store-badges" id="hero-download">
+            <a href="#" class="store-badge" aria-label="Download on the App Store">
+              <svg viewBox="0 0 24 24" class="store-badge__icon" aria-hidden="true">
+                <path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.87-.16 1.7-.86 3.11-.71 1.68.13 2.94.79 3.72 2.03-3.36 2-2.87 5.94.33 7.11-.54 1.31-1.24 2.61-2.24 3.74zM12.03 7.25c-.15-2.23 1.66-4.09 3.74-4.25.29 2.56-2.15 4.48-3.74 4.25z"/>
+              </svg>
+              <span class="store-badge__text">
+                <small>Download on the</small>
+                <strong>App Store</strong>
+              </span>
+            </a>
+            <a href="#" class="store-badge" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 24 24" class="store-badge__icon" aria-hidden="true">
+                <path fill="currentColor" d="M3.61 2.6c-.3.32-.48.81-.48 1.44v15.92c0 .63.18 1.12.48 1.44l.09.08L13 12.27v-.24L3.7 2.52l-.09.08z"/>
+                <path fill="currentColor" d="M16.15 15.4l-3.15-3.15v-.24l3.15-3.15.07.04 3.73 2.12c1.07.6 1.07 1.6 0 2.2l-3.73 2.12-.07.06z"/>
+                <path fill="currentColor" d="M16.22 15.34L13 12.13 3.61 21.52c.35.37.93.42 1.58.05l11.03-6.23"/>
+                <path fill="currentColor" d="M16.22 8.66L5.19 2.43c-.65-.37-1.23-.32-1.58.05L13 12.13l3.22-3.47z"/>
+              </svg>
+              <span class="store-badge__text">
+                <small>GET IT ON</small>
+                <strong>Google Play</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__phone fade-in">
+          <div class="phone-frame">
+            <div class="phone-frame__notch"></div>
+            <img src="assets/screenshot.jpeg" alt="Agora app screenshot showing the event feed for New York City" class="phone-frame__screen" onerror="this.onerror=null;this.src='';this.closest('.phone-frame').classList.add('phone-frame--placeholder')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How It Works ===== -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="section-inner">
+        <p class="eyebrow eyebrow--center">Simple by design</p>
+        <h2 class="section-heading">How it works</h2>
+
+        <div class="steps">
+          <div class="step fade-in">
+            <div class="step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+            </div>
+            <span class="step__number">01</span>
+            <h3 class="step__title">Discover</h3>
+            <p class="step__body">Tell Agora your city and interests — we'll surface film screenings, talks, readings, and live music happening nearby.</p>
+          </div>
+
+          <div class="step fade-in">
+            <div class="step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="4" y1="10" x2="20" y2="10"/></svg>
+            </div>
+            <span class="step__number">02</span>
+            <h3 class="step__title">Curate</h3>
+            <p class="step__body">Browse a single feed built for you, save what catches your eye, and add it straight to your calendar.</p>
+          </div>
+
+          <div class="step fade-in">
+            <div class="step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01z"/></svg>
+            </div>
+            <span class="step__number">03</span>
+            <h3 class="step__title">Go</h3>
+            <p class="step__body">Get gentle reminders before doors open, so the debate, screening, or show you didn't want to miss doesn't slip by.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Locations ===== -->
+    <section class="locations" id="locations">
+      <div class="section-inner">
+        <p class="eyebrow eyebrow--center">Where we are</p>
+        <h2 class="section-heading">Locations</h2>
+        <p class="section-subheading">Agora is live in New York City, with more cities landing soon.</p>
+
+        <div class="city-flagship fade-in">
+          <div class="city-flagship__text">
+            <span class="city-flagship__tag">Now live</span>
+            <h3>New York City</h3>
+            <p>Our flagship city — the fullest Agora feed, from downtown film houses to uptown lecture halls.</p>
+          </div>
+        </div>
+
+        <div class="city-grid">
+          <div class="city-card fade-in">
+            <h4>Los Angeles</h4>
+            <span class="city-card__tag">Coming soon</span>
+          </div>
+          <div class="city-card fade-in">
+            <h4>Chicago</h4>
+            <span class="city-card__tag">Coming soon</span>
+          </div>
+          <div class="city-card fade-in">
+            <h4>Boston</h4>
+            <span class="city-card__tag">Coming soon</span>
+          </div>
+          <div class="city-card fade-in">
+            <h4>San Francisco</h4>
+            <span class="city-card__tag">Coming soon</span>
+          </div>
+          <div class="city-card fade-in">
+            <h4>Washington, D.C.</h4>
+            <span class="city-card__tag">Coming soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact" id="contact">
+      <div class="section-inner section-inner--narrow">
+        <p class="eyebrow eyebrow--center">Get in touch</p>
+        <h2 class="section-heading">Contact</h2>
+        <p class="contact__line">
+          Questions, press, or partnership ideas — reach us at
+          <a href="mailto:hello@agoraapp.com">hello@agoraapp.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#top" class="footer__logo">
+        <img src="assets/logo.png" alt="Agora logo" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'footer__logo-fallback',textContent:'Agora'}))">
+      </a>
+      <p class="footer__copy">&copy; <span id="year"></span> Agora. All rights reserved.</p>
+      <a href="#" class="footer__privacy">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
