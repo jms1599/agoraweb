@@ -1,3 +1,6 @@
+// Page load fade-in
+requestAnimationFrame(() => document.body.classList.add('is-loaded'));
+
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const navMobile = document.getElementById('navMobile');
@@ -53,8 +56,7 @@ if (cycleWord) {
   } else {
     const typingSpeed = 170;
     const deletingSpeed = 110;
-    const pauseAfterType = 2600;
-    const pauseAfterDelete = 700;
+    const pauseAfterType = 1600;
 
     let wordIndex = 0;
     let charIndex = 0;
@@ -80,7 +82,7 @@ if (cycleWord) {
         if (charIndex === 0) {
           deleting = false;
           wordIndex = (wordIndex + 1) % words.length;
-          setTimeout(tick, pauseAfterDelete);
+          tick();
           return;
         }
         setTimeout(tick, deletingSpeed);

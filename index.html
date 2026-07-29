@@ -4,37 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agora — Your city's culture, all in one place</title>
-  <meta name="description" content="Agora surfaces the film screenings, talks, readings, and shows happening around you — so you never miss what's worth going to.">
+  <meta name="description" content="At Agora, we find all the Cultural, Academic, Artistic, Literary, and Educational events from local institutions, and compile a curated list. We filter out the stuff you don't want, leaving just the high-quality Lectures, Films, Exhibits, Debates, Art Exhibits, and more!">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Agora — Your city's culture, all in one place">
-  <meta property="og:description" content="Agora surfaces the film screenings, talks, readings, and shows happening around you — so you never miss what's worth going to.">
+  <meta property="og:description" content="At Agora, we find all the Cultural, Academic, Artistic, Literary, and Educational events from local institutions, and compile a curated list. We filter out the stuff you don't want, leaving just the high-quality Lectures, Films, Exhibits, Debates, Art Exhibits, and more!">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/screenshot.jpeg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@400;500;600;700&family=Pacifico:wght@400&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css">
+  <noscript><style>body { opacity: 1 !important; }</style></noscript>
 </head>
 <body>
 
   <!-- ===== Nav ===== -->
   <header class="nav" id="top">
     <div class="nav__inner">
-      <a href="#top" class="nav__logo">
-        <img src="assets/logo.png" alt="Agora logo" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'nav__logo-fallback',textContent:'Agora'}))">
-      </a>
-
       <nav class="nav__links" aria-label="Primary">
         <a href="#how-it-works">How It Works</a>
         <a href="#locations">Locations</a>
         <a href="#contact">Contact</a>
       </nav>
-
-      <a href="#hero-download" class="btn btn--filled nav__cta">Download Agora</a>
 
       <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -54,12 +49,13 @@
     <section class="hero">
       <div class="hero__inner">
         <div class="hero__text fade-in">
-          <p class="eyebrow">Event discovery, curated</p>
+          <p class="hero__wordmark">agora</p>
+          <p class="eyebrow">Cultural. Academic. Engaging Events.</p>
           <h1 class="hero__headline">Your city's<br><span class="cycle-word" id="cycleWord" aria-hidden="true"></span><span class="cycle-cursor" aria-hidden="true"></span><br>all in one place<span class="sr-only">Your city's lectures, films, exhibits, debates, and readings — all in one place</span></h1>
-          <p class="hero__subheadline">Agora surfaces the film screenings, talks, readings, and shows happening around you — so you never miss what's worth going to.</p>
+          <p class="hero__subheadline">At Agora, we find all the Cultural, Academic, Artistic, Literary, and Educational events from local institutions, and compile a curated list. We filter out the stuff you don't want, leaving just the high-quality Lectures, Films, Exhibits, Debates, Art Exhibits, and more!</p>
 
           <div class="store-badges" id="hero-download">
-            <a href="#" class="store-badge" aria-label="Download on the App Store">
+            <a href="#" class="store-badge store-badge--apple" aria-label="Download on the App Store">
               <svg viewBox="0 0 24 24" class="store-badge__icon" aria-hidden="true">
                 <path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.87-.16 1.7-.86 3.11-.71 1.68.13 2.94.79 3.72 2.03-3.36 2-2.87 5.94.33 7.11-.54 1.31-1.24 2.61-2.24 3.74zM12.03 7.25c-.15-2.23 1.66-4.09 3.74-4.25.29 2.56-2.15 4.48-3.74 4.25z"/>
               </svg>
@@ -68,12 +64,12 @@
                 <strong>App Store</strong>
               </span>
             </a>
-            <a href="#" class="store-badge" aria-label="Get it on Google Play">
+            <a href="#" class="store-badge store-badge--google" aria-label="Get it on Google Play">
               <svg viewBox="0 0 24 24" class="store-badge__icon" aria-hidden="true">
-                <path fill="currentColor" d="M3.61 2.6c-.3.32-.48.81-.48 1.44v15.92c0 .63.18 1.12.48 1.44l.09.08L13 12.27v-.24L3.7 2.52l-.09.08z"/>
-                <path fill="currentColor" d="M16.15 15.4l-3.15-3.15v-.24l3.15-3.15.07.04 3.73 2.12c1.07.6 1.07 1.6 0 2.2l-3.73 2.12-.07.06z"/>
-                <path fill="currentColor" d="M16.22 15.34L13 12.13 3.61 21.52c.35.37.93.42 1.58.05l11.03-6.23"/>
-                <path fill="currentColor" d="M16.22 8.66L5.19 2.43c-.65-.37-1.23-.32-1.58.05L13 12.13l3.22-3.47z"/>
+                <path fill="#4285F4" d="M14,12 L5,4 L5,12 Z"/>
+                <path fill="#34A853" d="M14,12 L5,12 L5,20 Z"/>
+                <path fill="#FBBC05" d="M14,12 L5,20 L20,12 Z"/>
+                <path fill="#EA4335" d="M14,12 L20,12 L5,4 Z"/>
               </svg>
               <span class="store-badge__text">
                 <small>GET IT ON</small>
@@ -84,6 +80,9 @@
         </div>
 
         <div class="hero__phone fade-in">
+          <div class="blob blob--a" aria-hidden="true"></div>
+          <div class="blob blob--b" aria-hidden="true"></div>
+          <div class="blob blob--c" aria-hidden="true"></div>
           <div class="phone-frame">
             <div class="phone-frame__notch"></div>
             <img src="assets/screenshot.jpeg" alt="Agora app screenshot showing the event feed for New York City" class="phone-frame__screen" onerror="this.onerror=null;this.src='';this.closest('.phone-frame').classList.add('phone-frame--placeholder')">
@@ -95,70 +94,83 @@
     <!-- ===== How It Works ===== -->
     <section class="how-it-works" id="how-it-works">
       <div class="section-inner">
-        <p class="eyebrow eyebrow--center">Simple by design</p>
-        <h2 class="section-heading">How it works</h2>
+        <h2 class="section-heading fade-in">How it works</h2>
 
-        <div class="steps">
-          <div class="step fade-in">
-            <div class="step__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
-            </div>
-            <span class="step__number">01</span>
-            <h3 class="step__title">Discover</h3>
-            <p class="step__body">Tell Agora your city and interests — we'll surface film screenings, talks, readings, and live music happening nearby.</p>
+        <div class="hiw-grid">
+          <div class="hiw-card hiw-card--1 fade-in">
+            <span class="hiw-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" id="lecture"><circle cx="250.617" cy="128.823" r="23.585" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"></circle><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15" d="M282.742 271.396v-71.542l27.738 7.842c1.121.319 2.351.476 3.495.476 2.218 0 4.46-.592 6.404-1.744l43.678-25.881c5.927-3.514 7.904-11.167 4.39-17.094-3.513-5.926-11.166-7.884-17.094-4.37l-39.043 23.146-28.507-11.727a60.402 60.402 0 0 0-22.467-4.539l-19.262-.163a60.398 60.398 0 0 0-23.752 4.649l-29.242 12.192-36.355-11.756c-6.554-2.118-13.589 1.476-15.709 8.032-2.12 6.556 1.476 13.589 8.032 15.709l40.019 12.941c1.247.403 2.542.605 3.838.605 1.185 0 2.151-.169 3.301-.507l26.284-7.796v71.527"></path><circle cx="113.253" cy="319.852" r="21.766" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"></circle><circle cx="208.811" cy="319.852" r="21.766" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"></circle><circle cx="304.368" cy="319.852" r="21.766" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"></circle><circle cx="399.926" cy="319.852" r="21.766" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"></circle><circle cx="64.206" cy="372.694" r="21.766" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"></circle><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15" d="M29.941 464.972v-18.019c0-18.924 15.341-34.265 34.265-34.265h0c18.924 0 34.265 15.341 34.265 34.265v18.019"></path><circle cx="160.286" cy="372.694" r="21.766" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"></circle><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15" d="M126.021 464.972v-18.019c0-18.924 15.341-34.265 34.265-34.265h0c18.924 0 34.265 15.341 34.265 34.265v18.019"></path><circle cx="256.366" cy="372.694" r="21.766" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"></circle><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15" d="M222.1 464.972v-18.019c0-18.924 15.341-34.265 34.265-34.265h0c18.924 0 34.265 15.341 34.265 34.265v18.019"></path><g stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><circle cx="352.446" cy="372.694" r="21.766" fill="none" stroke="currentColor" stroke-width="15"></circle><path d="M318.18 464.972v-18.019c0-18.924 15.341-34.265 34.265-34.265h0c18.924 0 34.265 15.341 34.265 34.265v18.019" fill="none" stroke="currentColor" stroke-width="15"></path></g><g stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><circle cx="448.526" cy="372.694" r="21.766" fill="none" stroke="currentColor" stroke-width="15"></circle><path d="M414.26 464.972v-18.019c0-18.924 15.341-34.265 34.265-34.265h0c18.924 0 34.265 15.341 34.265 34.265v18.019" fill="none" stroke="currentColor" stroke-width="15"></path></g><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15" d="M64.206 300.938H36.554V36.925h433.738v264.013h-21.766"></path></svg></span>
+            <h3 class="hiw-card__label">Lectures &amp; Panels</h3>
+            <p class="hiw-card__body">We review the event calendars of dozens of universities, think tanks, museums, local lecture series hosts, and more to find intellectually stimulating lectures, panels, and discussions from accredited speakers and organizations.</p>
           </div>
-
-          <div class="step fade-in">
-            <div class="step__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="4" y1="10" x2="20" y2="10"/></svg>
-            </div>
-            <span class="step__number">02</span>
-            <h3 class="step__title">Curate</h3>
-            <p class="step__body">Browse a single feed built for you, save what catches your eye, and add it straight to your calendar.</p>
+          <div class="hiw-card hiw-card--2 fade-in">
+            <span class="hiw-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" id="film"><path d="m60.031 243.791 24.091-9.112a18.719 18.719 0 0 0 11.96-18.946 31.839 31.839 0 0 1-.062-1.393v-.129a19.221 19.221 0 0 0-13.936-18.138l-31.3-9.056a13.621 13.621 0 0 0-17.236 10.831 96.9 96.9 0 0 0 1.561 39.009 13.667 13.667 0 0 0 13.261 10.404 13.594 13.594 0 0 0 4.812-.879Zm-14.265-5.169a5.665 5.665 0 0 1-2.894-3.7 88.923 88.923 0 0 1-1.431-35.777 5.493 5.493 0 0 1 2.527-3.8 5.668 5.668 0 0 1 4.593-.651l31.3 9.056a11.251 11.251 0 0 1 8.161 10.606v.133q.02.889.079 1.765a10.764 10.764 0 0 1-6.801 10.94l-20.16 7.626a68.537 68.537 0 0 1-2.94-19.89c0-2.142.1-4.3.3-6.417a4 4 0 0 0-7.967-.738 78.464 78.464 0 0 0-.329 7.155 76.531 76.531 0 0 0 3.437 22.728l-3.289 1.242a5.538 5.538 0 0 1-4.586-.278Z" fill="currentColor"></path><path d="M126.869 332.142a117 117 0 0 0 89.623-41.763c59.5-9.852 93.239-39.334 97.792-85.366a4.134 4.134 0 0 0 .116-.682c.03-.426.042-.834.07-1.257.015-.191.04-.377.055-.57.007-.106 0-.209-.006-.314a158.087 158.087 0 0 0-2.733-42.329 601.752 601.752 0 0 0 10.164-11.039 145.789 145.789 0 0 1-2.458 18.162 4 4 0 1 0 7.844 1.569 152.688 152.688 0 0 0 2.978-30.361 3.989 3.989 0 0 0-.01-1.047 141.167 141.167 0 0 0-15.853-63.9c-.024-.047-.05-.093-.075-.138-.38-.67-9.522-16.583-27.956-32.651a143.071 143.071 0 0 0-5.22-4.334l-.028-.022a131.945 131.945 0 0 0-43.1-22.849 3.93 3.93 0 0 0-.983-.288 123.721 123.721 0 0 0-35.351-5.1H47.93A13.344 13.344 0 0 0 34.6 21.188v35.5a13.345 13.345 0 0 0 13.33 13.33h135.125A133.143 133.143 0 0 1 252.441 89.1c26.874 16.378 57.861 49.132 54.114 112.273-1.983 4.566-17.339 35.961-66.071 42.414a117.218 117.218 0 1 0-113.615 88.36Zm170-210.307c3.176-4.586 10.931-15.925 18.017-27.378a133.73 133.73 0 0 1 7.4 41.836c-4.381 5.146-9.272 10.514-12.805 14.321a116.764 116.764 0 0 0-12.608-28.779ZM232.065 19.768a367.392 367.392 0 0 1-10.212 47.488 144.934 144.934 0 0 0-37.483-5.219l1.942-46.179h15.427a117.336 117.336 0 0 1 30.326 3.91Zm-98.678 36.586a4 4 0 0 0 4-4v-36.5h40.918l-1.941 46.158h-86.58V15.858h39.6v36.5a4 4 0 0 0 4.003 3.996Zm-90.787.332v-35.5a5.335 5.335 0 0 1 5.33-5.33h33.854v46.16H47.93a5.335 5.335 0 0 1-5.33-5.33Zm186.9 12.94a368.439 368.439 0 0 0 10.313-47.5 121.755 121.755 0 0 1 34.846 19.015c-1.227 14.541-8.051 35.913-11.323 45.516a137.09 137.09 0 0 0-6.728-4.4A136.488 136.488 0 0 0 229.5 69.626Zm40.575 22.048c2.59-7.38 9.493-27.992 11.917-44.461A134.529 134.529 0 0 1 307.387 77c1.4 2.708 2.664 5.406 3.834 8.092-6.621 11.108-14.714 23.141-19.121 29.575a117.618 117.618 0 0 0-22.029-22.993Zm32.8 129.756c-8.179 25.869-28.07 41.432-50.439 50.75a246.521 246.521 0 0 0 6.235-23.933 103.189 103.189 0 0 0 15.957-5.885 452.763 452.763 0 0 1-.855 5.366 4 4 0 0 0 3.292 4.6 4.1 4.1 0 0 0 .659.054 4 4 0 0 0 3.941-3.346c.8-4.8 1.41-9.028 1.74-11.374a83.308 83.308 0 0 0 19.469-16.232Zm-52.826 28.877c-1.2 5.34-3.415 14.092-7.147 25.437a172.108 172.108 0 0 1-19.2 5.154 116.874 116.874 0 0 0 14.325-28.769 131.383 131.383 0 0 0 12.021-1.822Zm-123.18-144.59A109.213 109.213 0 1 1 17.656 214.93a109.336 109.336 0 0 1 109.213-109.213Z" fill="currentColor"></path><path d="m143.654 186.323.1.061c.408.244.808.5 1.2.754a19.221 19.221 0 0 0 10.6 3.226 18.409 18.409 0 0 0 11.776-4.239l25.489-21.093a13.656 13.656 0 0 0 .67-20.42 96.927 96.927 0 0 0-33.121-20.668 13.623 13.623 0 0 0-17.943 9.615L134.8 165.24a19.217 19.217 0 0 0 8.854 21.083zm18.581-6.362a10.766 10.766 0 0 1-12.874.5q-.733-.483-1.489-.937l-.1-.063a11.254 11.254 0 0 1-5.19-12.348l4.3-17.876a69.272 69.272 0 0 1 29.971 18.627zm-12.029-44.529a5.663 5.663 0 0 1 2.84-3.669 5.5 5.5 0 0 1 4.55-.316 88.921 88.921 0 0 1 30.376 18.953 5.659 5.659 0 0 1 1.78 4.345 5.54 5.54 0 0 1-2.028 4.122l-4.69 3.881a75.992 75.992 0 0 0-34.275-21.31zm43.502 129.749-24.473-21.514a19.221 19.221 0 0 0-22.792-1.986l-.084.051q-.611.371-1.232.711a18.716 18.716 0 0 0-9.533 20.272l6.78 32.383a13.636 13.636 0 0 0 13.368 10.828 13.77 13.77 0 0 0 4.386-.718 96.573 96.573 0 0 0 19.305-8.977c1.653-1 3.264-2.074 4.855-3.174a4.067 4.067 0 0 0 .38-.269 96.6 96.6 0 0 0 9.184-7.25 13.623 13.623 0 0 0-.144-20.357zm-36.129 32.444a5.653 5.653 0 0 1-4.674-.451 5.534 5.534 0 0 1-2.7-3.716l-.086-.411c5.58.4 11.271.649 16.97.744a87.975 87.975 0 0 1-9.51 3.834zm30.929-18.041a88.279 88.279 0 0 1-7.692 6.133 301.2 301.2 0 0 1-32.4-.818l-4.988-23.824a10.762 10.762 0 0 1 5.553-11.619 43.603 43.603 0 0 0 1.541-.89l.092-.056a11.253 11.253 0 0 1 13.342 1.165l13.407 11.786a68.6 68.6 0 0 1-17.339 13.624 4 4 0 1 0 3.867 7 76.533 76.533 0 0 0 19.484-15.343l5.056 4.445a5.662 5.662 0 0 1 1.922 4.222 5.494 5.494 0 0 1-1.845 4.175zm-27.676-66.828v.1q.016.715 0 1.421a18.719 18.719 0 0 0 12.8 18.385l31.44 10.3a13.617 13.617 0 0 0 11.087-1.175 13.735 13.735 0 0 0 6.539-9.157 96.917 96.917 0 0 0-.2-39.039 13.622 13.622 0 0 0-17.698-10.047L173.937 194a19.223 19.223 0 0 0-13.105 18.756zm46.534-21.635a5.665 5.665 0 0 1 4.619.443 5.5 5.5 0 0 1 2.695 3.68 88.952 88.952 0 0 1 .182 35.8 5.658 5.658 0 0 1-2.725 3.825 5.543 5.543 0 0 1-4.569.483l-6.259-2.05a76.847 76.847 0 0 0-.829-39.852zm-14.473 4.9a68.839 68.839 0 0 1 .791 34.783l-17.556-5.75a10.767 10.767 0 0 1-7.294-10.619 43.81 43.81 0 0 0 0-1.776v-.106a11.253 11.253 0 0 1 7.673-10.978zm-129.35-30.807 25.6 20.963a18.4 18.4 0 0 0 11.7 4.18 19.223 19.223 0 0 0 10.681-3.279q.586-.393 1.194-.762l.094-.056a19.223 19.223 0 0 0 8.754-21.132l-7.79-31.643a13.623 13.623 0 0 0-17.992-9.523A96.93 96.93 0 0 0 62.77 144.8a13.654 13.654 0 0 0 .773 20.416zm45.129 14.2-.1.06q-.756.46-1.488.949a10.764 10.764 0 0 1-12.873-.437L78 166.711a69.125 69.125 0 0 1 31.252-18.156l4.55 18.485a11.256 11.256 0 0 1-5.13 12.374zM68.32 150.56a88.893 88.893 0 0 1 30.28-19.109 5.487 5.487 0 0 1 4.551.293 5.667 5.667 0 0 1 2.859 3.653l1.326 5.389a77.2 77.2 0 0 0-35.555 20.835l-3.17-2.6a5.538 5.538 0 0 1-2.048-4.111 5.655 5.655 0 0 1 1.757-4.35zm43.314 92.115a28.19 28.19 0 0 1-1.218-.7l-.106-.064a19.221 19.221 0 0 0-22.777 2.1L63.168 265.66a13.62 13.62 0 0 0-.039 20.356 96.907 96.907 0 0 0 33.822 19.5 13.748 13.748 0 0 0 11.192-1.148 13.618 13.618 0 0 0 6.51-9.052l6.617-32.416a18.718 18.718 0 0 0-9.636-20.225zM92.846 250a11.253 11.253 0 0 1 13.327-1.238l.111.067q.759.456 1.534.876a10.766 10.766 0 0 1 5.614 11.592l-4.088 20.03a69.106 69.106 0 0 1-31.326-18.157zm11.287 47.443a5.655 5.655 0 0 1-4.672.475 88.93 88.93 0 0 1-31.019-17.883 5.5 5.5 0 0 1-1.863-4.163 5.665 5.665 0 0 1 1.9-4.232l3.547-3.15a77.159 77.159 0 0 0 35.713 20.688l-.925 4.536a5.541 5.541 0 0 1-2.681 3.73zm6.875-92.908a18.74 18.74 0 1 0 25.711-6.428 18.761 18.761 0 0 0-25.711 6.428zm6.859 4.116a10.74 10.74 0 1 1 3.684 14.735 10.745 10.745 0 0 1-3.684-14.735z" fill="currentColor"></path></svg></span>
+            <h3 class="hiw-card__label">Films</h3>
+            <p class="hiw-card__body">We monitor the programming of the small, mom-and-pop, independent movie theaters in your city to put all the niche, arthouse, retro, or just straight up classics that are playing into one neat place.</p>
           </div>
-
-          <div class="step fade-in">
-            <div class="step__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.9 6.26L21 9.27l-4.5 4.39L17.8 21 12 17.77 6.2 21l1.3-7.34L3 9.27l6.1-1.01z"/></svg>
-            </div>
-            <span class="step__number">03</span>
-            <h3 class="step__title">Go</h3>
-            <p class="step__body">Get gentle reminders before doors open, so the debate, screening, or show you didn't want to miss doesn't slip by.</p>
+          <div class="hiw-card hiw-card--3 fade-in">
+            <span class="hiw-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="book"><path d="M100.56689.08691,34.771,20.15723a12.98255,12.98255,0,0,0-8.97363,9.93945s-15.19427,77.629-15.1958,77.63672A22.88094,22.88094,0,0,0,10,112.10352,15.926,15.926,0,0,0,25.91992,128h82.24219a1.99968,1.99968,0,0,0,1.9917-1.81641L117.958,41.4541a9.97407,9.97407,0,0,0-1.01611-5.38867L105.782,13.78229l-.84894,7.23737,8.43262,16.83777a5.97631,5.97631,0,0,1,.60889,3.22949l-7.07214,76.78369-3.04553-7.61377a2.00012,2.00012,0,1,0-3.71387,1.48633L105.04578,124H25.91992A11.92176,11.92176,0,0,1,14,112.10352a12.20842,12.20842,0,0,1,.06152-1.22363l.42529-2.17383a11.83866,11.83866,0,0,1,8.80176-8.20508L92.08936,84.96a2.001,2.001,0,0,0,1.5459-1.71777l9.49969-81.22742A1.98075,1.98075,0,0,0,100.56689.08691ZM89.82764,81.37012,22.40771,96.59863a16.00133,16.00133,0,0,0-6.10107,2.81055l13.4165-68.54492A8.98819,8.98819,0,0,1,35.938,23.9834L98.80762,4.80566Z" fill="currentColor"></path><path d="M100.8667 85.9873a1.9113 1.9113 0 00.22314.0127 2.00051 2.00051 0 001.98535-1.7793l5-45a2 2 0 00-3.97559-.44141l-5 45A1.99884 1.99884 0 00100.8667 85.9873zM25.26221 107.90625L85.47656 95.96191a2.00014 2.00014 0 00-.77832-3.92383L24.44238 103.99121A8.09944 8.09944 0 0026.187 120H93.76514a2 2 0 000-4H26.187a4.09972 4.09972 0 01-.9248-8.09375zM33.40576 45.21289a6.00612 6.00612 0 005.86572 7.18066 6.03394 6.03394 0 001.63477-.22656L82.1333 40.624a6.00861 6.00861 0 004.31641-4.8877l1.69385-11.292a6.00008 6.00008 0 00-7.582-6.65918L39.8833 29.40723a5.97352 5.97352 0 00-4.23486 4.5918zm3.92188.78516L39.5708 34.7832a1.99134 1.99134 0 011.41113-1.53027L81.66064 21.63086a2.042 2.042 0 01.563-.08008 2.00484 2.00484 0 011.96387 2.2998l-1.69385 11.292a2.00248 2.00248 0 01-1.43848 1.62988l-41.22754 11.543a2 2 0 01-2.5-2.31738z" fill="currentColor"></path></svg></span>
+            <h3 class="hiw-card__label">Literature</h3>
+            <p class="hiw-card__body">Did you know your local book stores host readings and author talks all the time?! Well you do now. We compiled a list for you from all the local bookshops in your area, so you don't have to.</p>
+          </div>
+          <div class="hiw-card hiw-card--4 fade-in">
+            <span class="hiw-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="music"><g><path d="M5 22.75H4A1.752 1.752 0 0 1 2.25 21v-1A4.756 4.756 0 0 1 7 15.25h1A1.752 1.752 0 0 1 9.75 17v1A4.756 4.756 0 0 1 5 22.75zm2-6A3.254 3.254 0 0 0 3.75 20v1a.25.25 0 0 0 .25.25h1A3.254 3.254 0 0 0 8.25 18v-1a.25.25 0 0 0-.25-.25zm10 3h-1A1.752 1.752 0 0 1 14.25 18v-1A4.756 4.756 0 0 1 19 12.25h1A1.752 1.752 0 0 1 21.75 14v1A4.756 4.756 0 0 1 17 19.75zm2-6A3.254 3.254 0 0 0 15.75 17v1a.25.25 0 0 0 .25.25h1A3.254 3.254 0 0 0 20.25 15v-1a.25.25 0 0 0-.25-.25z" fill="currentColor"></path><path d="M9 17.75a.75.75 0 0 1-.75-.75V6.562a2.744 2.744 0 0 1 2.083-2.668l8-2a2.75 2.75 0 0 1 3.417 2.668V14a.75.75 0 0 1-1.5 0V4.562a1.249 1.249 0 0 0-1.55-1.213l-8 2a1.249 1.249 0 0 0-.95 1.213V17a.75.75 0 0 1-.75.75Z" fill="currentColor"></path><path d="M9 9.75a.75.75 0 0 1-.182-1.478l12-3a.75.75 0 0 1 .364 1.456l-12 3A.761.761 0 0 1 9 9.75Z" fill="currentColor"></path></g></svg></span>
+            <h3 class="hiw-card__label">Music</h3>
+            <p class="hiw-card__body">There are a billion apps that tell you what concerts are in your area. We don't do that. What we DO, is tell you what operas, orchestras, symphonies, and other more niche musical performances are happening at a cultural institution near you.</p>
+          </div>
+          <div class="hiw-card hiw-card--5 fade-in">
+            <span class="hiw-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="art"><path d="M14,32a5,5,0,1,0,5,5A5.00588,5.00588,0,0,0,14,32Zm0,8a3,3,0,1,1,3-3A3.00328,3.00328,0,0,1,14,40Zm9,3a5,5,0,1,0,5,5A5.00588,5.00588,0,0,0,23,43Zm0,8a3,3,0,1,1,3-3A3.00328,3.00328,0,0,1,23,51ZM17,28a5,5,0,1,0-5-5A5.00588,5.00588,0,0,0,17,28Zm0-8a3,3,0,1,1-3,3A3.00328,3.00328,0,0,1,17,20Zm13,1a5,5,0,1,0-5-5A5.00588,5.00588,0,0,0,30,21Zm0-8a3,3,0,1,1-3,3A3.00328,3.00328,0,0,1,30,13ZM61.36328,4.63672c-2.56482-2.56482-10.21319,3.36438-14.90564,7.774A26.99758,26.99758,0,1,0,29,60c2.85156,0,5.09082-.97852,6.14551-2.68555.66308-1.07226,1.1582-2.94336-.251-5.76172a6.29655,6.29655,0,0,1-.05176-5.96093C35.89062,43.89648,38.01953,43,41,43c7.417,0,15-1.18848,15-10a27.00269,27.00269,0,0,0-3.17145-12.66229C57.27161,15.76764,64.07928,7.35461,61.36328,4.63672ZM59.94922,6.05078c.626.67481-1.72168,6.07031-9.11914,13.4668a62.85729,62.85729,0,0,1-5.7077,5.07153,12.11179,12.11179,0,0,0-3.71149-3.71149,62.85729,62.85729,0,0,1,5.07153-5.7077C53.87988,7.77246,59.27637,5.42676,59.94922,6.05078Zm-21.8241,19.8371a25.742,25.742,0,0,1,2.08881-3.407,10.117,10.117,0,0,1,3.30517,3.30517,25.742,25.742,0,0,1-3.407,2.08881A6.034,6.034,0,0,0,38.12512,25.88788ZM39,31c0,2.36523-2.46387,5-6,5a8.602,8.602,0,0,1-5.92383-2.02344c2.11621-.458,3.06836-2.24609,3.87012-3.751C32.01172,28.22559,32.77734,27,35,27A4.004,4.004,0,0,1,39,31Zm2,10c-4.68652,0-6.86035,1.9248-7.8584,3.54a8.21137,8.21137,0,0,0-.03613,7.90723c.80078,1.60058.915,2.88476.33887,3.8164C32.77246,57.35059,31.11133,58,29,58A25,25,0,1,1,45.00085,13.82556c-4.05059,4.06049-7.23132,8.19788-8.733,11.31207A5.99555,5.99555,0,0,0,35,25c-3.53711,0-4.80176,2.376-5.81836,4.28516-1.09277,2.05175-1.76758,3.10156-4.01758,2.72851a1,1,0,0,0-1.05859,1.4336C24.19824,33.63281,26.457,38,33,38c4.78516,0,8-3.61914,8-7a5.99555,5.99555,0,0,0-.13763-1.26782A44.957,44.957,0,0,0,51.3421,21.8056,24.99812,24.99812,0,0,1,54,33C54,38.75684,50.35547,41,41,41Z" fill="currentColor"></path></svg></span>
+            <h3 class="hiw-card__label">Art</h3>
+            <p class="hiw-card__body">There are well over 100 museums in NYC alone, and nobody has time to check each and every one's exhibendar. We review museums across your city from major to boutique to make sure we have an up-to-date list of what exhibits are up and which are on the way! All in one place.</p>
+          </div>
+          <div class="hiw-card hiw-card--6 fade-in">
+            <span class="hiw-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 1024 1024" viewBox="0 0 1024 1024" id="box"><path d="M482,579.1c0,12.4,0,24.9,0,37.3c0,29.9,0,59.7,0,89.6c0,36.2,0,72.3,0,108.5c0,31.3,0,62.6,0,93.9     c0,15.3-0.5,30.6,0,45.9c0,0.2,0,0.4,0,0.6c15-8.6,30.1-17.3,45.1-25.9c-11.8-6.2-23.6-12.5-35.4-18.7     c-28.3-15-56.6-29.9-85-44.9c-34.3-18.1-68.6-36.2-102.8-54.3c-29.7-15.7-59.3-31.3-89-47c-14.5-7.6-28.8-15.8-43.5-23     c-0.2-0.1-0.4-0.2-0.6-0.3c5,8.6,9.9,17.3,14.9,25.9c0-21,0-41.9,0-62.9c0-33.2,0-66.5,0-99.7c0-7.7,0-15.4,0-23.1     c-15,8.6-30.1,17.3-45.1,25.9c28.3,14.9,56.6,29.9,84.9,44.8c44.7,23.6,89.5,47.2,134.2,70.8c10.3,5.4,20.5,10.8,30.8,16.3     c6.1,3.2,12.3,4.5,19.1,3.6c5.9-0.8,13.3-3.3,17.2-8.3c11.9-15,23.9-30,35.8-45c19.1-24.1,38.3-48.2,57.4-72.3     c4.4-5.5,8.8-11,13.2-16.6c5.1-6.5,8.8-12.6,8.8-21.2c0-7.4-3.3-16.1-8.8-21.2c-5.7-5.2-13.2-9.1-21.2-8.8     c-7.4,0.3-16.4,2.7-21.2,8.8c-11.9,15-23.9,30-35.8,45c-19.1,24.1-38.3,48.2-57.4,72.3c-4.4,5.5-8.8,11-13.2,16.6     c12.1-1.6,24.2-3.1,36.4-4.7c-28.3-14.9-56.6-29.9-84.9-44.8c-44.7-23.6-89.5-47.2-134.2-70.8c-10.3-5.4-20.5-10.8-30.8-16.3     c-19.9-10.5-45.1,2.4-45.1,25.9c0,21,0,41.9,0,62.9c0,33.2,0,66.5,0,99.7c0,7.7,0,15.4,0,23.1c0,10.2,5.6,21,14.9,25.9     c11.8,6.2,23.6,12.5,35.4,18.7c28.3,15,56.6,29.9,85,44.9c34.3,18.1,68.6,36.2,102.8,54.3c29.7,15.7,59.3,31.3,89,47     c14.5,7.6,28.9,15.5,43.5,23c0.2,0.1,0.4,0.2,0.6,0.3c19.9,10.5,45.1-2.4,45.1-25.9c0-12.4,0-24.9,0-37.3c0-29.9,0-59.7,0-89.6     c0-36.2,0-72.3,0-108.5c0-31.3,0-62.6,0-93.9c0-15.3,0.3-30.6,0-45.9c0-0.2,0-0.4,0-0.6c0-15.7-13.8-30.7-30-30     C495.7,549.9,482,562.3,482,579.1z" fill="currentColor"></path><path d="M838.3,581.1c0,21,0,41.9,0,62.9c0,33.2,0,66.5,0,99.7c0,7.7,0,15.4,0,23.1c5-8.6,9.9-17.3,14.9-25.9     c-11.8,6.2-23.6,12.5-35.4,18.7c-28.3,15-56.6,29.9-85,44.9c-34.3,18.1-68.6,36.2-102.8,54.3c-29.7,15.7-59.3,31.3-89,47     c-14.5,7.6-29.2,14.9-43.5,23c-0.2,0.1-0.4,0.2-0.6,0.3c15,8.6,30.1,17.3,45.1,25.9c0-12.4,0-24.9,0-37.3c0-29.9,0-59.7,0-89.6     c0-36.2,0-72.3,0-108.5c0-31.3,0-62.6,0-93.9c0-15.3,0.5-30.6,0-45.9c0-0.2,0-0.4,0-0.6c-17.1,7.1-34.1,14.1-51.2,21.2     c11.9,15,23.9,30,35.8,45c19.1,24.1,38.3,48.2,57.4,72.3c4.4,5.5,8.8,11,13.2,16.6c3.9,5,11.3,7.5,17.2,8.3     c6.8,0.9,13-0.3,19.1-3.6c28.3-14.9,56.6-29.9,84.9-44.8c44.7-23.6,89.5-47.2,134.2-70.8c10.3-5.4,20.5-10.8,30.8-16.3     c13.9-7.3,19.3-27.8,10.8-41c-9.1-14.1-26.2-18.6-41-10.8c-28.3,14.9-56.6,29.9-84.9,44.8c-44.7,23.6-89.5,47.2-134.2,70.8     c-10.3,5.4-20.5,10.8-30.8,16.3c12.1,1.6,24.2,3.1,36.4,4.7c-11.9-15-23.9-30-35.8-45c-19.1-24.1-38.3-48.2-57.4-72.3     c-4.4-5.5-8.8-11-13.2-16.6c-2.9-3.6-8.9-6.5-13.2-7.7c-6.5-1.8-13.4-1.1-19.5,1.5c-10.9,4.6-18.4,15.4-18.4,27.4     c0,12.4,0,24.9,0,37.3c0,29.9,0,59.7,0,89.6c0,36.2,0,72.3,0,108.5c0,31.3,0,62.6,0,93.9c0,15.3-0.3,30.6,0,45.9     c0,0.2,0,0.4,0,0.6c0,23.5,25.3,36.4,45.1,25.9c11.8-6.2,23.6-12.5,35.4-18.7c28.3-15,56.6-29.9,85-44.9     c34.3-18.1,68.6-36.2,102.8-54.3c29.7-15.7,59.3-31.3,89-47c14.5-7.6,29.2-14.9,43.5-23c0.2-0.1,0.4-0.2,0.6-0.3     c9.2-4.9,14.9-15.7,14.9-25.9c0-21,0-41.9,0-62.9c0-33.2,0-66.5,0-99.7c0-7.7,0-15.4,0-23.1c0-15.7-13.8-30.7-30-30     C852,551.9,838.3,564.3,838.3,581.1z" fill="currentColor"></path><path d="M853.1,365.1c-11.8,6.2-23.6,12.5-35.4,18.7c-28.3,15-56.6,29.9-85,44.9c-34.3,18.1-68.6,36.2-102.8,54.3     c-29.7,15.7-59.3,31.3-89,47c-14.5,7.6-29.2,14.9-43.5,23c-0.2,0.1-0.4,0.2-0.6,0.3c10.1,0,20.2,0,30.3,0     c-11.8-6.2-23.6-12.5-35.4-18.7c-28.3-15-56.6-29.9-85-44.9c-34.3-18.1-68.6-36.2-102.8-54.3c-29.7-15.7-59.3-31.3-89-47     c-14.5-7.6-28.8-15.7-43.5-23c-0.2-0.1-0.4-0.2-0.6-0.3c0,17.3,0,34.5,0,51.8c11.8-6.2,23.6-12.4,35.4-18.7     c28.3-14.9,56.6-29.9,85-44.8c34.3-18.1,68.6-36.2,102.8-54.2c29.7-15.6,59.3-31.3,89-46.9c14.5-7.6,29.2-14.9,43.5-22.9     c0.2-0.1,0.4-0.2,0.6-0.3c-10.1,0-20.2,0-30.3,0c11.8,6.2,23.6,12.4,35.4,18.7c28.3,14.9,56.6,29.9,85,44.8     c34.3,18.1,68.6,36.2,102.8,54.2c29.7,15.6,59.3,31.3,89,46.9c14.5,7.6,28.9,15.5,43.5,22.9c0.2,0.1,0.4,0.2,0.6,0.3     c13.9,7.3,33.3,4,41-10.8c7.3-13.9,4.1-33.2-10.8-41c-11.9-6.3-23.8-12.5-35.7-18.8c-28.5-15-57-30.1-85.5-45.1     c-34.4-18.2-68.9-36.3-103.3-54.5c-29.6-15.6-59.3-31.3-88.9-46.9c-14.1-7.5-28.1-15.3-42.4-22.4c-10.6-5.2-20.8-5.2-31.2,0     c-1.6,0.8-3.1,1.6-4.7,2.5c-7.3,3.8-14.5,7.7-21.8,11.5c-26.8,14.2-53.7,28.3-80.5,42.5c-34.2,18.1-68.5,36.1-102.7,54.2     c-31,16.3-61.9,32.6-92.9,49c-16.9,8.9-33.9,17.9-50.8,26.8c-0.8,0.4-1.6,0.8-2.4,1.3c-19.5,10.3-19.5,41.5,0,51.8     c11.9,6.3,23.8,12.6,35.7,18.8c28.5,15.1,57,30.1,85.5,45.2c34.4,18.2,68.9,36.4,103.3,54.6c29.6,15.7,59.3,31.3,88.9,47     c14.1,7.5,28.1,15.3,42.4,22.4c10.5,5.3,20.8,5.2,31.2,0c1.6-0.8,3.1-1.6,4.7-2.5c7.3-3.8,14.5-7.7,21.8-11.5     c26.8-14.2,53.7-28.4,80.5-42.5c34.2-18.1,68.5-36.2,102.7-54.3c31-16.3,61.9-32.7,92.9-49c16.9-8.9,33.9-17.9,50.8-26.8     c0.8-0.4,1.6-0.8,2.4-1.3c13.9-7.3,19.3-27.8,10.8-41C885.1,361.7,868,357.2,853.1,365.1z" fill="currentColor"></path><path d="M490.8,557.9c-11.9,15-23.9,30-35.8,45c-19.1,24.1-38.3,48.2-57.4,72.3c-4.4,5.5-8.8,11-13.2,16.6     c12.1-1.6,24.2-3.1,36.4-4.7c-15.8-8.3-31.5-16.6-47.3-25c-32.9-17.4-65.9-34.8-98.8-52.2c-28.5-15.1-57.1-30.1-85.6-45.2     c-12.2-6.5-24.4-12.9-36.7-19.4c-28.7-15.1-57.3-30.3-86-45.4c-0.6-0.3-1.3-0.7-1.9-1c2,15.7,4,31.4,6.1,47.1     c11.9-15,23.9-30,35.8-45.1c19.1-24.1,38.3-48.2,57.4-72.3c4.4-5.5,8.8-11.1,13.2-16.6c-12.1,1.6-24.2,3.1-36.4,4.7     c11.8,6.2,23.6,12.5,35.4,18.7c28.3,15,56.6,29.9,85,44.9c34.3,18.1,68.6,36.2,102.8,54.3c29.7,15.7,59.3,31.3,89,47     c14.5,7.7,28.9,15.5,43.5,23c0.2,0.1,0.4,0.2,0.6,0.3c13.9,7.3,33.3,4,41-10.8c7.3-13.9,4.1-33.2-10.8-41     c-11.8-6.2-23.6-12.5-35.4-18.7c-28.3-15-56.6-29.9-85-44.9c-34.3-18.1-68.6-36.2-102.8-54.3c-29.7-15.7-59.3-31.3-89-47     c-14.5-7.6-28.8-15.6-43.5-23c-0.2-0.1-0.4-0.2-0.6-0.3c-6.1-3.2-12.3-4.5-19.1-3.6c-5.9,0.8-13.3,3.3-17.2,8.3     c-11.9,15-23.9,30-35.8,45.1c-19.1,24.1-38.3,48.2-57.4,72.3c-4.4,5.5-8.8,11.1-13.2,16.6c-6.2,7.8-9.6,15.1-8.3,25.2     c1.2,8.9,6.1,17.6,14.3,21.9c25.6,13.5,51.1,27,76.7,40.5c13.7,7.3,27.5,14.5,41.2,21.8c26.4,14,52.9,27.9,79.3,41.9     c33.6,17.7,67.1,35.4,100.7,53.2c19.1,10.1,38.2,20.6,57.5,30.3c0.3,0.1,0.6,0.3,0.9,0.5c6.1,3.2,12.3,4.5,19.1,3.6     c5.9-0.8,13.3-3.3,17.2-8.3c11.9-15,23.9-30,35.8-45c19.1-24.1,38.3-48.2,57.4-72.3c4.4-5.5,8.8-11,13.2-16.6     c5.1-6.5,8.8-12.6,8.8-21.2c0-7.4-3.3-16.1-8.8-21.2c-5.7-5.2-13.2-9.1-21.2-8.8C504.6,549.5,495.6,551.8,490.8,557.9z" fill="currentColor"></path><path d="M959.5,499c-25.6,13.5-51.1,27-76.7,40.5c-13.7,7.3-27.5,14.5-41.2,21.8c-26.4,14-52.9,27.9-79.3,41.9     c-33.6,17.7-67.1,35.4-100.7,53.2c-19.1,10.1-38.6,19.8-57.5,30.3c-0.3,0.2-0.6,0.3-0.9,0.5c12.1,1.6,24.2,3.1,36.4,4.7     c-11.9-15-23.9-30-35.8-45c-19.1-24.1-38.3-48.2-57.4-72.3c-4.4-5.5-8.8-11-13.2-16.6c-2,15.7-4,31.4-6.1,47.1     c11.8-6.2,23.6-12.5,35.4-18.7c28.3-15,56.6-29.9,85-44.9c34.3-18.1,68.6-36.2,102.8-54.3c29.7-15.7,59.3-31.3,89-47     c14.5-7.6,29.2-14.9,43.5-23c0.2-0.1,0.4-0.2,0.6-0.3c-12.1-1.6-24.2-3.1-36.4-4.7c11.9,15,23.9,30,35.8,45.1     c19.1,24.1,38.3,48.2,57.4,72.3c4.4,5.5,8.8,11.1,13.2,16.6c4.5,5.6,14.4,8.8,21.2,8.8c7.4,0,16.1-3.3,21.2-8.8     c5.2-5.7,9.1-13.2,8.8-21.2c-0.4-8.5-3.6-14.6-8.8-21.2c-11.9-15-23.9-30-35.8-45.1c-19.1-24.1-38.3-48.2-57.4-72.3     c-4.4-5.5-8.8-11.1-13.2-16.6c-3.9-5-11.3-7.5-17.2-8.3c-6.8-0.9-13,0.3-19.1,3.6c-11.8,6.2-23.6,12.5-35.4,18.7     c-28.3,15-56.6,29.9-85,44.9c-34.3,18.1-68.6,36.2-102.8,54.3c-29.7,15.7-59.3,31.3-89,47c-14.5,7.6-29.2,14.9-43.5,23     c-0.2,0.1-0.4,0.2-0.6,0.3c-8.2,4.4-13.1,13-14.3,21.9c-1.4,10.1,2.1,17.4,8.3,25.2c11.9,15,23.9,30,35.8,45     c19.1,24.1,38.3,48.2,57.4,72.3c4.4,5.5,8.8,11,13.2,16.6c3.9,5,11.3,7.5,17.2,8.3c6.8,0.9,13-0.3,19.1-3.6     c15.8-8.3,31.5-16.6,47.3-25c32.9-17.4,65.9-34.8,98.8-52.2c28.5-15.1,57.1-30.1,85.6-45.2c12.2-6.5,24.4-12.9,36.7-19.4     c28.7-15.1,57.3-30.3,86-45.4c0.6-0.3,1.3-0.7,1.9-1c13.9-7.3,19.3-27.8,10.8-41C991.5,495.7,974.4,491.2,959.5,499z" fill="currentColor"></path><path d="M883.4,365.1c-11.8-6.2-23.6-12.4-35.4-18.7c-28.3-14.9-56.6-29.9-85-44.8     c-34.3-18.1-68.6-36.2-102.8-54.2c-29.7-15.6-59.3-31.3-89-46.9c-14.5-7.6-28.8-15.7-43.5-22.9c-0.2-0.1-0.4-0.2-0.6-0.3     c2,15.7,4,31.4,6.1,47.1c11.9-15,23.9-30,35.8-45c19.1-24.1,38.3-48.2,57.4-72.3c4.4-5.5,8.8-11,13.2-16.6     c-12.1,1.6-24.2,3.1-36.4,4.7c11.8,6.2,23.6,12.5,35.4,18.7c28.3,15,56.6,29.9,85,44.9c34.3,18.1,68.6,36.2,102.8,54.4     c29.7,15.7,59.3,31.4,89,47c14.5,7.6,28.8,15.8,43.5,23c0.2,0.1,0.4,0.2,0.6,0.3c-2-15.7-4-31.4-6.1-47.1     c-11.9,15-23.9,29.9-35.8,44.9c-19.1,24-38.3,48.1-57.4,72.1c-4.4,5.5-8.8,11-13.2,16.5c-5.1,6.5-8.8,12.6-8.8,21.2     c0,7.4,3.3,16.1,8.8,21.2c5.7,5.2,13.2,9.1,21.2,8.8c7.4-0.3,16.4-2.7,21.2-8.8c11.9-15,23.9-29.9,35.8-44.9     c19.1-24,38.3-48.1,57.4-72.1c4.4-5.5,8.8-11,13.2-16.5c6.2-7.8,9.6-15.1,8.3-25.2c-1.2-8.9-6.1-17.6-14.3-21.9     c-11.8-6.2-23.6-12.5-35.4-18.7c-28.3-15-56.6-29.9-85-44.9c-34.3-18.1-68.6-36.2-102.8-54.4c-29.7-15.7-59.3-31.4-89-47     c-14.5-7.7-28.8-15.6-43.5-23c-0.2-0.1-0.4-0.2-0.6-0.3c-6.1-3.2-12.3-4.5-19.1-3.6c-5.9,0.8-13.3,3.3-17.2,8.3     c-11.9,15-23.9,30-35.8,45c-19.1,24.1-38.3,48.2-57.4,72.3c-4.4,5.5-8.8,11-13.2,16.6c-6.2,7.8-9.6,15.1-8.3,25.2     c1.2,8.9,6.1,17.6,14.3,21.9c11.8,6.2,23.6,12.4,35.4,18.7c28.3,14.9,56.6,29.9,85,44.8c34.3,18.1,68.6,36.2,102.8,54.2     c29.7,15.6,59.3,31.3,89,46.9c14.5,7.6,28.9,15.5,43.5,22.9c0.2,0.1,0.4,0.2,0.6,0.3c13.9,7.3,33.3,4,41-10.8     C901.5,392.2,898.2,372.9,883.4,365.1z" fill="currentColor"></path><path d="M496.9,177.1c-11.8,6.2-23.6,12.4-35.4,18.7c-28.3,14.9-56.6,29.9-85,44.8     c-34.3,18.1-68.6,36.2-102.8,54.2c-29.7,15.6-59.3,31.3-89,46.9c-14.5,7.6-29.2,14.9-43.5,22.9c-0.2,0.1-0.4,0.2-0.6,0.3     c12.1,1.6,24.2,3.1,36.4,4.7c-11.9-15-23.9-29.9-35.8-44.9c-19.1-24-38.3-48.1-57.4-72.1c-4.4-5.5-8.8-11-13.2-16.5     c-2,15.7-4,31.4-6.1,47.1c11.8-6.2,23.6-12.5,35.4-18.7c28.3-15,56.6-29.9,85-44.9c34.3-18.1,68.6-36.2,102.8-54.4     c29.7-15.7,59.3-31.4,89-47c14.5-7.7,29.2-14.9,43.5-23c0.2-0.1,0.4-0.2,0.6-0.3c-12.1-1.6-24.2-3.1-36.4-4.7     c11.9,15,23.9,30,35.8,45c19.1,24.1,38.3,48.2,57.4,72.3c4.4,5.5,8.8,11,13.2,16.6c4.5,5.6,14.4,8.8,21.2,8.8     c7.4,0,16.1-3.3,21.2-8.8c5.2-5.7,9.1-13.2,8.8-21.2c-0.4-8.4-3.6-14.6-8.8-21.2c-11.9-15-23.9-30-35.8-45     c-19.1-24.1-38.3-48.2-57.4-72.3c-4.4-5.5-8.8-11-13.2-16.6c-3.9-5-11.3-7.5-17.2-8.3c-6.8-0.9-13,0.3-19.1,3.6     c-11.8,6.2-23.6,12.5-35.4,18.7c-28.3,15-56.6,29.9-85,44.9c-34.3,18.1-68.6,36.2-102.8,54.4c-29.7,15.7-59.3,31.4-89,47     c-14.5,7.7-29.2,14.9-43.5,23c-0.2,0.1-0.4,0.2-0.6,0.3c-8.2,4.4-13.1,13-14.3,21.9c-1.4,10.1,2.1,17.4,8.3,25.2     c11.9,15,23.9,29.9,35.8,44.9c19.1,24,38.3,48.1,57.4,72.1c4.4,5.5,8.8,11,13.2,16.5c4,5,11.3,7.5,17.2,8.3     c6.8,0.9,12.9-0.3,19.1-3.6c11.8-6.2,23.6-12.4,35.4-18.7c28.3-14.9,56.6-29.9,85-44.8c34.3-18.1,68.6-36.2,102.8-54.2     c29.7-15.6,59.3-31.3,89-46.9c14.5-7.6,29.2-14.9,43.5-22.9c0.2-0.1,0.4-0.2,0.6-0.3c13.9-7.3,19.3-27.8,10.8-41     C528.8,173.7,511.7,169.3,496.9,177.1z" fill="currentColor"></path></svg></span>
+            <h3 class="hiw-card__label">Other</h3>
+            <p class="hiw-card__body">We try to keep a generally open mind to a wide variety of events that could belong on the Agora listings. So in the Other category you'll find these. Have an idea? Send us a message below.</p>
           </div>
         </div>
+
+        <p class="hiw-blurb fade-in">Agora is an event listing platform that focuses on events that are In-Person, Cultural, Academic, Art-Focused, and mentally stimulating and engaging. We work hard to create lists of institutions, organizations, and event hosts in a city, and then we go through and curate the events we feel match our desired curation. We look at places like Universities, Think Tanks, Reperatory Cinemas, Small Playhouses, Museums, Public Libraries, Book Stores, Lecture Series Hosts, and whatever else we find!</p>
       </div>
     </section>
 
     <!-- ===== Locations ===== -->
     <section class="locations" id="locations">
       <div class="section-inner">
-        <p class="eyebrow eyebrow--center">Where we are</p>
-        <h2 class="section-heading">Locations</h2>
-        <p class="section-subheading">Agora is live in New York City, with more cities landing soon.</p>
+        <h2 class="section-heading fade-in">Locations</h2>
+        <p class="section-subheading fade-in">We're just getting started, working on adding new cities at this very moment.</p>
 
-        <div class="city-flagship fade-in">
-          <div class="city-flagship__text">
-            <span class="city-flagship__tag">Now live</span>
-            <h3>New York City</h3>
-            <p>Our flagship city — the fullest Agora feed, from downtown film houses to uptown lecture halls.</p>
+        <p class="locations__group-label">Live now</p>
+        <div class="city-grid">
+          <div class="city-card city-card--live fade-in">
+            <h4>New York City</h4>
+            <span class="city-card__tag city-card__tag--live">Now live</span>
+          </div>
+          <div class="city-card city-card--live fade-in">
+            <h4>Los Angeles</h4>
+            <span class="city-card__tag city-card__tag--live">Now live</span>
+          </div>
+          <div class="city-card city-card--live fade-in">
+            <h4>Chicago</h4>
+            <span class="city-card__tag city-card__tag--live">Now live</span>
+          </div>
+          <div class="city-card city-card--live fade-in">
+            <h4>Boston</h4>
+            <span class="city-card__tag city-card__tag--live">Now live</span>
           </div>
         </div>
 
+        <p class="locations__group-label">Coming soon</p>
         <div class="city-grid">
           <div class="city-card fade-in">
-            <h4>Los Angeles</h4>
+            <h4>New Haven</h4>
             <span class="city-card__tag">Coming soon</span>
           </div>
           <div class="city-card fade-in">
-            <h4>Chicago</h4>
+            <h4>Providence</h4>
             <span class="city-card__tag">Coming soon</span>
           </div>
           <div class="city-card fade-in">
-            <h4>Boston</h4>
-            <span class="city-card__tag">Coming soon</span>
-          </div>
-          <div class="city-card fade-in">
-            <h4>San Francisco</h4>
+            <h4>Bay Area</h4>
             <span class="city-card__tag">Coming soon</span>
           </div>
           <div class="city-card fade-in">
@@ -172,12 +184,10 @@
     <!-- ===== Contact ===== -->
     <section class="contact" id="contact">
       <div class="section-inner section-inner--narrow">
-        <p class="eyebrow eyebrow--center">Get in touch</p>
-        <h2 class="section-heading">Contact</h2>
-        <p class="contact__line">
-          Questions, press, or partnership ideas — reach us at
-          <a href="mailto:hello@agoraapp.com">hello@agoraapp.com</a>
-        </p>
+        <p class="eyebrow eyebrow--center fade-in">Get in touch</p>
+        <h2 class="section-heading fade-in">Contact</h2>
+        <p class="contact__line fade-in">Questions, press, or partnership ideas — we'd love to hear from you.</p>
+        <a href="mailto:jake@agoraeventsapp.com" class="btn btn--filled contact__btn fade-in">Contact Us</a>
       </div>
     </section>
   </main>
@@ -188,8 +198,13 @@
       <a href="#top" class="footer__logo">
         <img src="assets/logo.png" alt="Agora logo" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'footer__logo-fallback',textContent:'Agora'}))">
       </a>
-      <p class="footer__copy">&copy; <span id="year"></span> Agora. All rights reserved.</p>
-      <a href="#" class="footer__privacy">Privacy Policy</a>
+      <p class="footer__copy">&copy; <span id="year"></span> Agora Events LLC. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Legal">
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="delete-account.html">Delete Account Instructions</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
     </div>
   </footer>
 
