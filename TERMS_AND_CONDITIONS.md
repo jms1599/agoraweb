@@ -16,7 +16,7 @@ Agora is a discovery tool that helps you find cultural events — such as film s
 
 You must be at least 13 years old (or the minimum age required in your jurisdiction) to use the Service. By using Agora, you represent that you meet this requirement.
 
-To use certain features, you must create an account with accurate information. You are responsible for maintaining the confidentiality of your login credentials and for all activity under your account. Notify us promptly at jake@agoraevents.com if you suspect unauthorized use of your account. We are not liable for losses arising from unauthorized use of your account where we have implemented reasonable security measures.
+To use certain features, you must create an account with accurate information. You are responsible for maintaining the confidentiality of your login credentials and for all activity under your account. Notify us promptly at jake@agoraeventsapp.com if you suspect unauthorized use of your account. We are not liable for losses arising from unauthorized use of your account where we have implemented reasonable security measures.
 
 ## 3. Event Information and Third-Party Content
 
@@ -30,7 +30,7 @@ To use certain features, you must create an account with accurate information. Y
 
 **Third-party links and services.** The Service may contain links to third-party websites or services (for example, a venue's website or ticketing page). We do not control and are not responsible for third-party sites, their content, their terms, or their privacy practices. Your dealings with any third party — including purchasing tickets and attending events — are solely between you and that third party.
 
-**Corrections and removals.** If you are a venue, organizer, or rights holder and believe information about you or your events is inaccurate or should be removed, contact us at jake@agoraevents.com and we will review the request promptly.
+**Corrections and removals.** If you are a venue, organizer, or rights holder and believe information about you or your events is inaccurate or should be removed, contact us at jake@agoraeventsapp.com and we will review the request promptly.
 
 ## 4. License to Use the Service
 
@@ -107,7 +107,7 @@ These Terms, together with the Privacy Policy, are the entire agreement between 
 
 Questions about these Terms:
 
-**Email:** jake@agoraevents.com
+**Email:** jake@agoraeventsapp.com
 
 **Agora Events LLC**
 

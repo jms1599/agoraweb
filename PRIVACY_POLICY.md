@@ -85,7 +85,7 @@ We may update this Privacy Policy from time to time. If we make material changes
 
 Questions, requests, or concerns about this policy or your data:
 
-**Email:** jake@agoraevents.com
+**Email:** jake@agoraeventsapp.com
 
 **Agora Events LLC**
 
