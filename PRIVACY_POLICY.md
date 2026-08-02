@@ -1,14 +1,12 @@
 # Agora Privacy Policy
 
-*Last updated: July 28, 2026*
+*Last updated: August 1, 2026*
 
 Agora Events LLC ("we," "us," or "our") operates the Agora mobile application (iOS and Android) and website at agoraeventsapp.com (together, the "Service"), which help you discover cultural events in your city. This Privacy Policy explains what information we collect, how we use it, and the choices you have.
 
 By creating an account or using the Service, you agree to the practices described in this policy.
 
 ## 1. Information We Collect
-
-The information we collect is information you voluntarily give us through your direct input and interaction with the app — for example, the account details you provide, the city you select, and how you use the Service, such as time spent, events focused on, and categories browsed.
 
 **Information you provide to us:**
 
@@ -18,7 +16,7 @@ The information we collect is information you voluntarily give us through your d
 
 **Information we collect automatically:**
 
-- **App activity.** We collect information about how you use the Service, such as which events you view, save, or tap "Details" on, the categories you browse (e.g., Film, Music, Lectures), your searches within the app, and the time and duration of your sessions.
+- **App activity.** We collect information about how you use the Service, such as which events you view, save, or tap "Details" on, the categories you browse (e.g., Film, Music, Lectures), your searches within the app, and the time and duration of your sessions. This activity is linked to your account (not just collected anonymously) so we can understand engagement and improve the app.
 - **Device and technical data.** Like most apps, we may collect basic technical information such as device type, operating system version, app version, language, and crash or performance logs.
 - **Cookies and similar technologies.** We reserve the right to use cookies, local storage, or similar technologies on our website and app to operate the Service, remember your preferences (such as your selected city), and understand how the Service is used. You can control cookies through your browser or device settings, though some features may not work properly without them.
 
