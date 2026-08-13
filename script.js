@@ -2,6 +2,32 @@
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// Mobile menu toggle
+const menuToggle = document.getElementById('menuToggle');
+const siteNav = document.getElementById('siteNav');
+
+if (menuToggle && siteNav) {
+  const closeMenu = () => {
+    siteNav.classList.remove('is-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = siteNav.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  siteNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!siteNav.classList.contains('is-open')) return;
+    if (siteNav.contains(e.target) || menuToggle.contains(e.target)) return;
+    closeMenu();
+  });
+}
+
 // Hero typewriter
 const typedEl = document.getElementById('typedWord');
 

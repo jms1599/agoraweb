@@ -119,6 +119,7 @@ button { font: inherit; }
 }
 
 .site-header__inner {
+  position: relative;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--gutter);
@@ -126,7 +127,6 @@ button { font: inherit; }
   display: flex;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .brand {
@@ -176,6 +176,88 @@ button { font: inherit; }
 }
 
 .store-pill:hover { background: var(--ink); color: var(--cream); }
+
+/* ---------- Mobile menu toggle ---------- */
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.menu-toggle__bar {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.menu-toggle__bar::before,
+.menu-toggle__bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+  transition: transform .2s ease, top .2s ease, opacity .2s ease;
+}
+
+.menu-toggle__bar::before { top: -6px; }
+.menu-toggle__bar::after { top: 6px; }
+
+.menu-toggle[aria-expanded="true"] .menu-toggle__bar { background: transparent; }
+.menu-toggle[aria-expanded="true"] .menu-toggle__bar::before { top: 0; transform: rotate(45deg); }
+.menu-toggle[aria-expanded="true"] .menu-toggle__bar::after { top: 0; transform: rotate(-45deg); }
+
+@media (max-width: 760px) {
+  .menu-toggle { display: inline-flex; }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--cream);
+    border-bottom: 1px solid var(--ink-border);
+    box-shadow: 0 16px 24px -16px rgba(15, 23, 38, .18);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height .25s ease, opacity .2s ease;
+  }
+
+  .site-nav.is-open {
+    max-height: 320px;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 4px var(--gutter) 20px;
+  }
+
+  .site-nav a:not(.store-pill) {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--ink-border);
+  }
+
+  .store-pill {
+    margin-top: 16px;
+    justify-content: center;
+  }
+}
 
 /* ---------- Hero ---------- */
 
