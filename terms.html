@@ -9,140 +9,134 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&family=Pacifico:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css">
-  <noscript><style>body { opacity: 1 !important; }</style></noscript>
 </head>
 <body>
 
-  <!-- ===== Nav ===== -->
-  <header class="nav" id="top">
-    <div class="nav__inner">
-      <nav class="nav__links" aria-label="Primary">
-        <a href="index.html#how-it-works">How It Works</a>
-        <a href="index.html#locations">Locations</a>
-        <a href="index.html#contact">Contact</a>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="brand">Agora</a>
+      <div class="spacer"></div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html#works">How it works</a>
+        <a href="index.html#cities">Cities</a>
+        <a href="support.html">Support</a>
+        <a href="#" class="store-pill" aria-label="Download on the App Store">
+          <svg width="14" height="16" viewBox="0 0 14 17" fill="#F3EFE6"><path d="M11.6 9c0-1.9 1.5-2.8 1.6-2.8-.9-1.3-2.2-1.5-2.7-1.5-1.2-.1-2.3.7-2.9.7-.6 0-1.5-.7-2.5-.7C3.8 4.7 2.5 5.5 1.8 6.7.4 9.2 1.4 12.9 2.8 14.9c.7 1 1.5 2.1 2.5 2 1-.04 1.4-.65 2.6-.65s1.5.65 2.6.63c1.1-.02 1.8-1 2.4-2 .8-1.15 1.1-2.27 1.1-2.33-.02-.01-2.2-.85-2.4-3.55zM9.7 3.4c.55-.66.92-1.58.82-2.5-.79.03-1.75.53-2.32 1.19-.51.58-.95 1.52-.83 2.42.88.07 1.78-.45 2.33-1.11z"/></svg>
+          <span>App Store</span>
+        </a>
       </nav>
-
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-
-    <nav class="nav__mobile" id="navMobile" aria-label="Mobile">
-      <a href="index.html#how-it-works">How It Works</a>
-      <a href="index.html#locations">Locations</a>
-      <a href="index.html#contact">Contact</a>
-      <a href="index.html#hero-download" class="btn btn--filled">Download Agora</a>
-    </nav>
   </header>
 
   <main>
-    <section class="legal-page">
-      <div class="section-inner section-inner--narrow">
-        <h1 class="legal-page__title">Agora Terms of Service</h1>
-        <p class="policy-meta">Last updated: July 28, 2026</p>
+    <section class="legal legal--doc">
+      <div class="eyebrow">Last updated: July 28, 2026</div>
+      <h1>Agora Terms of Service</h1>
 
-        <div class="policy">
-          <p>Welcome to Agora. These Terms of Service ("Terms") govern your access to and use of the Agora mobile application (iOS and Android) and our website at agoraeventsapp.com (together, the "Service"), operated by <strong>Agora Events LLC</strong> ("Agora," "we," "us," or "our").</p>
-          <p>By creating an account or using the Service, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the Service.</p>
-          <p><strong>By using the Agora app or website, you accept and agree to be bound by these Terms and our Privacy Policy. We reserve the right to change our Privacy Policy at any time to reflect changes to these Terms or to our privacy and data practices, and you agree to keep yourself informed of any such changes.</strong></p>
+      <div class="legal-body">
+        <p>Welcome to Agora. These Terms of Service ("Terms") govern your access to and use of the Agora mobile application (iOS and Android) and our website at agoraeventsapp.com (together, the "Service"), operated by <strong>Agora Events LLC</strong> ("Agora," "we," "us," or "our").</p>
+        <p>By creating an account or using the Service, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the Service.</p>
 
-          <h2>1. What Agora Is</h2>
-          <p>Agora is a discovery tool that helps you find cultural events — such as film screenings, lectures, readings, discussions, and live music — in cities you select. Agora is an informational service only: we compile and present information about events, but we do not host, organize, sponsor, sell tickets to, or otherwise operate any of the events listed on the Service.</p>
-
-          <h2>2. Eligibility and Accounts</h2>
-          <p>You must be at least 13 years old (or the minimum age required in your jurisdiction) to use the Service. By using Agora, you represent that you meet this requirement.</p>
-          <p>To use certain features, you must create an account with accurate information. You are responsible for maintaining the confidentiality of your login credentials and for all activity under your account. Notify us promptly at <a href="mailto:jake@agoraeventsapp.com">jake@agoraeventsapp.com</a> if you suspect unauthorized use of your account. We are not liable for losses arising from unauthorized use of your account where we have implemented reasonable security measures.</p>
-
-          <h2>3. Event Information and Third-Party Content</h2>
-          <p><strong>Sources of information.</strong> The event listings and related details displayed on the Service (including titles, descriptions, dates, times, venues, addresses, prices, and availability) are compiled and aggregated from a variety of third-party and publicly available sources, including venue websites, event organizers, and other public materials. This information is provided for convenience and informational purposes only.</p>
-          <p><strong>No guarantee of accuracy.</strong> We try to make event information — including location, timing, and other expectations about an event — as accurate as possible, but errors can happen in the process of reviewing sites and compiling listings, and third-party sources may themselves contain errors. We do not verify, and cannot guarantee, the accuracy, completeness, timeliness, or availability of any event listing. Events may be rescheduled, relocated, sold out, subject to admission requirements, or canceled at any time without reflection in the Service. <strong>You agree not to treat information about an event as 100% accurate, and to always confirm event details against the original posting or listing site (often linked within the event details) before making plans, purchases, or travel arrangements.</strong> We are not responsible for any loss, cost, inconvenience, or disappointment arising from reliance on information presented in the Service.</p>
-          <p><strong>AI-assisted review.</strong> We may use artificial intelligence and large language models to help review, organize, and edit event listings before they appear on the Service. As with any automated process, this may introduce errors, and AI-assisted edits are not a guarantee of accuracy.</p>
-          <p><strong>No affiliation or endorsement.</strong> Unless expressly stated otherwise, Agora is not affiliated with, endorsed by, or sponsored by any venue, organizer, artist, institution, or other entity whose events or information appear on the Service. All third-party names, trademarks, logos, and content remain the property of their respective owners and are used solely to identify and describe the relevant events. Their appearance in the Service does not imply any partnership or endorsement, and nothing in these Terms grants you any rights in third-party names or marks.</p>
-          <p><strong>Third-party links and services.</strong> The Service may contain links to third-party websites or services (for example, a venue's website or ticketing page). We do not control and are not responsible for third-party sites, their content, their terms, or their privacy practices. Your dealings with any third party — including purchasing tickets and attending events — are solely between you and that third party.</p>
-          <p><strong>Corrections and removals.</strong> If you are a venue, organizer, or rights holder and believe information about you or your events is inaccurate or should be removed, contact us at <a href="mailto:jake@agoraeventsapp.com">jake@agoraeventsapp.com</a> and we will review the request promptly.</p>
-
-          <h2>4. License to Use the Service</h2>
-          <p>Subject to these Terms, we grant you a limited, personal, non-exclusive, non-transferable, revocable license to use the Service for your own personal, non-commercial use. All rights not expressly granted are reserved.</p>
-
-          <h2>5. Acceptable Use</h2>
-          <p>You agree not to:</p>
-          <ul>
-            <li>Use the Service for any unlawful purpose or in violation of these Terms;</li>
-            <li>Copy, reproduce, distribute, sell, resell, or commercially exploit the Service or any compilation of data from the Service;</li>
-            <li>Use automated means (including bots, crawlers, or similar tools) to access, extract, or harvest data from the Service without our prior written permission;</li>
-            <li>Attempt to gain unauthorized access to the Service, other users' accounts, or our systems, or probe, scan, or test the vulnerability of the Service;</li>
-            <li>Interfere with or disrupt the integrity or performance of the Service;</li>
-            <li>Reverse engineer, decompile, or disassemble any part of the Service except where permitted by law;</li>
-            <li>Impersonate any person or entity or misrepresent your affiliation with anyone;</li>
-            <li>Use the Service to harass, harm, or defraud others.</li>
-          </ul>
-          <p>We may suspend or terminate accounts that violate this section.</p>
-
-          <h2>6. Our Intellectual Property</h2>
-          <p>The Service — including its software, design, branding, logos, text we author, and the selection, arrangement, and presentation of content — is owned by Agora or its licensors and is protected by intellectual property laws. Except for the limited license in Section 4, nothing in these Terms transfers any ownership rights to you. For clarity, this section does not claim ownership over third-party content described in Section 3.</p>
-
-          <h2>7. Feedback</h2>
-          <p>If you send us ideas, suggestions, or feedback about the Service, you grant us a perpetual, irrevocable, royalty-free license to use them without restriction or compensation to you.</p>
-
-          <h2>8. Changes to the Service</h2>
-          <p>We are constantly improving Agora. We may add, change, or remove features, cities, or content at any time, and we may suspend or discontinue all or part of the Service, with or without notice. We are not liable to you for any modification, suspension, or discontinuation of the Service.</p>
-
-          <h2>9. Disclaimer of Warranties</h2>
-          <p>You access and use the Service, including navigating the app and website and attending any events you discover through it, at your own risk.</p>
-          <p class="policy-legalcaps">THE SERVICE AND ALL CONTENT ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, OR AVAILABILITY. WITHOUT LIMITING THE FOREGOING, WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE, OR THAT ANY EVENT INFORMATION IS ACCURATE, COMPLETE, OR CURRENT. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES, SO SOME OF THE ABOVE MAY NOT APPLY TO YOU.</p>
-
-          <h2>10. Limitation of Liability</h2>
-          <p class="policy-legalcaps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, AGORA AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, DATA, GOODWILL, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATING TO YOUR USE OF (OR INABILITY TO USE) THE SERVICE, ANY EVENT INFORMATION, OR ANY EVENT YOU ATTEND OR ATTEMPT TO ATTEND, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
-          <p class="policy-legalcaps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE SERVICE WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US, IF ANY, IN THE TWELVE (12) MONTHS BEFORE THE CLAIM AROSE, OR (B) FIFTY U.S. DOLLARS (US$50).</p>
-          <p class="policy-legalcaps">SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS OF LIABILITY, SO SOME OF THE ABOVE MAY NOT APPLY TO YOU. NOTHING IN THESE TERMS LIMITS LIABILITY THAT CANNOT BE LIMITED BY LAW.</p>
-
-          <h2>11. Indemnification</h2>
-          <p>You agree to indemnify and hold harmless Agora and its officers, directors, employees, and agents from and against any claims, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to: (a) your use of the Service; (b) your violation of these Terms; (c) your violation of any law or the rights of any third party; or (d) your attendance at, or dealings related to, any event discovered through the Service.</p>
-
-          <h2>12. Termination</h2>
-          <p>You may stop using the Service and delete your account at any time. We may suspend or terminate your access to the Service at any time, with or without cause or notice, including if we believe you have violated these Terms. Sections that by their nature should survive termination (including Sections 3, 6, 7, and 9–15) will survive.</p>
-
-          <h2>13. Governing Law and Disputes</h2>
-          <p>These Terms are governed by the laws of the State of California, without regard to its conflict-of-laws rules.</p>
-          <p><strong>Agreement to arbitrate.</strong> Except for disputes that qualify for small claims court, you and Agora agree that any dispute arising out of or relating to these Terms or the Service will be resolved through binding arbitration on an individual basis, rather than in court, except that either party may bring an individual action in small claims court or seek injunctive or other equitable relief in a court of competent jurisdiction to prevent actual or threatened infringement, misappropriation, or violation of a party's intellectual property rights. The arbitration will be administered by the American Arbitration Association ("AAA") under its Consumer Arbitration Rules then in effect, and will take place in, or be based on evidence submitted from, Los Angeles County, California, unless you and Agora agree otherwise.</p>
-          <p class="policy-legalcaps">YOU AND AGORA EACH AGREE THAT ANY DISPUTE RESOLUTION PROCEEDINGS WILL BE CONDUCTED ONLY ON AN INDIVIDUAL BASIS AND NOT IN A CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION. IF FOR ANY REASON A CLAIM PROCEEDS IN COURT RATHER THAN IN ARBITRATION, YOU AND AGORA EACH WAIVE ANY RIGHT TO A JURY TRIAL.</p>
-          <p>To the extent any dispute is not subject to arbitration, or either party properly elects small claims court, that dispute will be resolved exclusively in the state or federal courts located in Los Angeles County, California, and you consent to personal jurisdiction and venue there.</p>
-          <p class="policy-note"><strong>Note for Jake:</strong> This is generic, commonly-used arbitration language, not customized legal advice for your business — have a lawyer review it before relying on it, especially the choice of arbitration provider (AAA) and its rules.</p>
-
-          <h2>14. Changes to These Terms</h2>
-          <p>We may update these Terms from time to time. If we make material changes, we will notify you through the Service or by email and update the "Last updated" date above. Changes take effect when posted (or on the date stated in the notice). Your continued use of the Service after changes take effect constitutes acceptance of the updated Terms.</p>
-
-          <h2>15. General</h2>
-          <p>These Terms, together with the Privacy Policy, are the entire agreement between you and Agora regarding the Service. If any provision is found unenforceable, the remaining provisions remain in effect. Our failure to enforce any provision is not a waiver. You may not assign these Terms without our consent; we may assign them in connection with a merger, acquisition, or sale of assets.</p>
-
-          <h2>16. Contact</h2>
-          <p>Questions about these Terms:</p>
-          <p>
-            <strong>Email:</strong> <a href="mailto:jake@agoraeventsapp.com">jake@agoraeventsapp.com</a><br>
-            <strong>Agora Events LLC</strong><br>
-            Los Angeles County, CA
-          </p>
+        <div class="legal-callout">
+          <p>By using the Agora app or website, you accept and agree to be bound by these Terms and our Privacy Policy. We reserve the right to change our Privacy Policy at any time to reflect changes to these Terms or to our privacy and data practices, and you agree to keep yourself informed of any such changes.</p>
         </div>
+
+        <h2>1. What Agora Is</h2>
+        <p>Agora is a discovery tool that helps you find cultural events — such as film screenings, lectures, readings, discussions, and live music — in cities you select. Agora is an informational service only: we compile and present information about events, but we do not host, organize, sponsor, sell tickets to, or otherwise operate any of the events listed on the Service.</p>
+
+        <h2>2. Eligibility and Accounts</h2>
+        <p>You must be at least 13 years old (or the minimum age required in your jurisdiction) to use the Service. By using Agora, you represent that you meet this requirement.</p>
+        <p>To use certain features, you must create an account with accurate information. You are responsible for maintaining the confidentiality of your login credentials and for all activity under your account. Notify us promptly at <a href="mailto:jake@agoraeventsapp.com">jake@agoraeventsapp.com</a> if you suspect unauthorized use of your account. We are not liable for losses arising from unauthorized use of your account where we have implemented reasonable security measures.</p>
+
+        <h2>3. Event Information and Third-Party Content</h2>
+        <p><strong>Sources of information.</strong> The event listings and related details displayed on the Service (including titles, descriptions, dates, times, venues, addresses, prices, and availability) are compiled and aggregated from a variety of third-party and publicly available sources, including venue websites, event organizers, and other public materials. This information is provided for convenience and informational purposes only.</p>
+        <p><strong>No guarantee of accuracy.</strong> We try to make event information — including location, timing, and other expectations about an event — as accurate as possible, but errors can happen in the process of reviewing sites and compiling listings, and third-party sources may themselves contain errors. We do not verify, and cannot guarantee, the accuracy, completeness, timeliness, or availability of any event listing. Events may be rescheduled, relocated, sold out, subject to admission requirements, or canceled at any time without reflection in the Service. <strong>You agree not to treat information about an event as 100% accurate, and to always confirm event details against the original posting or listing site (often linked within the event details) before making plans, purchases, or travel arrangements.</strong> We are not responsible for any loss, cost, inconvenience, or disappointment arising from reliance on information presented in the Service.</p>
+        <p><strong>AI-assisted review.</strong> We may use artificial intelligence and large language models to help review, organize, and edit event listings before they appear on the Service. As with any automated process, this may introduce errors, and AI-assisted edits are not a guarantee of accuracy.</p>
+        <p><strong>No affiliation or endorsement.</strong> Unless expressly stated otherwise, Agora is not affiliated with, endorsed by, or sponsored by any venue, organizer, artist, institution, or other entity whose events or information appear on the Service. All third-party names, trademarks, logos, and content remain the property of their respective owners and are used solely to identify and describe the relevant events. Their appearance in the Service does not imply any partnership or endorsement, and nothing in these Terms grants you any rights in third-party names or marks.</p>
+        <p><strong>Third-party links and services.</strong> The Service may contain links to third-party websites or services (for example, a venue's website or ticketing page). We do not control and are not responsible for third-party sites, their content, their terms, or their privacy practices. Your dealings with any third party — including purchasing tickets and attending events — are solely between you and that third party.</p>
+        <p><strong>Corrections and removals.</strong> If you are a venue, organizer, or rights holder and believe information about you or your events is inaccurate or should be removed, contact us at <a href="mailto:jake@agoraeventsapp.com">jake@agoraeventsapp.com</a> and we will review the request promptly.</p>
+
+        <h2>4. License to Use the Service</h2>
+        <p>Subject to these Terms, we grant you a limited, personal, non-exclusive, non-transferable, revocable license to use the Service for your own personal, non-commercial use. All rights not expressly granted are reserved.</p>
+
+        <h2>5. Acceptable Use</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use the Service for any unlawful purpose or in violation of these Terms;</li>
+          <li>Copy, reproduce, distribute, sell, resell, or commercially exploit the Service or any compilation of data from the Service;</li>
+          <li>Use automated means (including bots, crawlers, or similar tools) to access, extract, or harvest data from the Service without our prior written permission;</li>
+          <li>Attempt to gain unauthorized access to the Service, other users' accounts, or our systems, or probe, scan, or test the vulnerability of the Service;</li>
+          <li>Interfere with or disrupt the integrity or performance of the Service;</li>
+          <li>Reverse engineer, decompile, or disassemble any part of the Service except where permitted by law;</li>
+          <li>Impersonate any person or entity or misrepresent your affiliation with anyone;</li>
+          <li>Use the Service to harass, harm, or defraud others.</li>
+        </ul>
+        <p>We may suspend or terminate accounts that violate this section.</p>
+
+        <h2>6. Our Intellectual Property</h2>
+        <p>The Service — including its software, design, branding, logos, text we author, and the selection, arrangement, and presentation of content — is owned by Agora or its licensors and is protected by intellectual property laws. Except for the limited license in Section 4, nothing in these Terms transfers any ownership rights to you. For clarity, this section does not claim ownership over third-party content described in Section 3.</p>
+
+        <h2>7. Feedback</h2>
+        <p>If you send us ideas, suggestions, or feedback about the Service, you grant us a perpetual, irrevocable, royalty-free license to use them without restriction or compensation to you.</p>
+
+        <h2>8. Changes to the Service</h2>
+        <p>We are constantly improving Agora. We may add, change, or remove features, cities, or content at any time, and we may suspend or discontinue all or part of the Service, with or without notice. We are not liable to you for any modification, suspension, or discontinuation of the Service.</p>
+
+        <h2>9. Disclaimer of Warranties</h2>
+        <p>You access and use the Service, including navigating the app and website and attending any events you discover through it, at your own risk.</p>
+        <p class="legal-caps">THE SERVICE AND ALL CONTENT ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, OR AVAILABILITY. WITHOUT LIMITING THE FOREGOING, WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE, OR THAT ANY EVENT INFORMATION IS ACCURATE, COMPLETE, OR CURRENT. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES, SO SOME OF THE ABOVE MAY NOT APPLY TO YOU.</p>
+
+        <h2>10. Limitation of Liability</h2>
+        <p class="legal-caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, AGORA AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, DATA, GOODWILL, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATING TO YOUR USE OF (OR INABILITY TO USE) THE SERVICE, ANY EVENT INFORMATION, OR ANY EVENT YOU ATTEND OR ATTEMPT TO ATTEND, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+        <p class="legal-caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE SERVICE WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US, IF ANY, IN THE TWELVE (12) MONTHS BEFORE THE CLAIM AROSE, OR (B) FIFTY U.S. DOLLARS (US$50).</p>
+        <p class="legal-caps">SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS OF LIABILITY, SO SOME OF THE ABOVE MAY NOT APPLY TO YOU. NOTHING IN THESE TERMS LIMITS LIABILITY THAT CANNOT BE LIMITED BY LAW.</p>
+
+        <h2>11. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Agora and its officers, directors, employees, and agents from and against any claims, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to: (a) your use of the Service; (b) your violation of these Terms; (c) your violation of any law or the rights of any third party; or (d) your attendance at, or dealings related to, any event discovered through the Service.</p>
+
+        <h2>12. Termination</h2>
+        <p>You may stop using the Service and delete your account at any time. We may suspend or terminate your access to the Service at any time, with or without cause or notice, including if we believe you have violated these Terms. Sections that by their nature should survive termination (including Sections 3, 6, 7, and 9–15) will survive.</p>
+
+        <h2>13. Governing Law and Disputes</h2>
+        <p>These Terms are governed by the laws of the State of California, without regard to its conflict-of-laws rules.</p>
+        <p><strong>Agreement to arbitrate.</strong> Except for disputes that qualify for small claims court, you and Agora agree that any dispute arising out of or relating to these Terms or the Service will be resolved through binding arbitration on an individual basis, rather than in court, except that either party may bring an individual action in small claims court or seek injunctive or other equitable relief in a court of competent jurisdiction to prevent actual or threatened infringement, misappropriation, or violation of a party's intellectual property rights. The arbitration will be administered by the American Arbitration Association ("AAA") under its Consumer Arbitration Rules then in effect, and will take place in, or be based on evidence submitted from, Los Angeles County, California, unless you and Agora agree otherwise.</p>
+        <p class="legal-caps">YOU AND AGORA EACH AGREE THAT ANY DISPUTE RESOLUTION PROCEEDINGS WILL BE CONDUCTED ONLY ON AN INDIVIDUAL BASIS AND NOT IN A CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION. IF FOR ANY REASON A CLAIM PROCEEDS IN COURT RATHER THAN IN ARBITRATION, YOU AND AGORA EACH WAIVE ANY RIGHT TO A JURY TRIAL.</p>
+        <p>To the extent any dispute is not subject to arbitration, or either party properly elects small claims court, that dispute will be resolved exclusively in the state or federal courts located in Los Angeles County, California, and you consent to personal jurisdiction and venue there.</p>
+        <div class="legal-note"><strong>Note for Jake:</strong> This is generic, commonly-used arbitration language, not customized legal advice for your business — have a lawyer review it before relying on it, especially the choice of arbitration provider (AAA) and its rules.</div>
+
+        <h2>14. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. If we make material changes, we will notify you through the Service or by email and update the "Last updated" date above. Changes take effect when posted (or on the date stated in the notice). Your continued use of the Service after changes take effect constitutes acceptance of the updated Terms.</p>
+
+        <h2>15. General</h2>
+        <p>These Terms, together with the Privacy Policy, are the entire agreement between you and Agora regarding the Service. If any provision is found unenforceable, the remaining provisions remain in effect. Our failure to enforce any provision is not a waiver. You may not assign these Terms without our consent; we may assign them in connection with a merger, acquisition, or sale of assets.</p>
+
+        <h2>16. Contact</h2>
+        <p>Questions about these Terms:</p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:jake@agoraeventsapp.com">jake@agoraeventsapp.com</a><br>
+          <strong>Agora Events LLC</strong><br>
+          Los Angeles County, CA
+        </p>
       </div>
     </section>
   </main>
 
   <!-- ===== Footer ===== -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <a href="index.html" class="footer__logo">
-        <img src="assets/logo.png" alt="Agora logo" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'footer__logo-fallback',textContent:'Agora'}))">
-      </a>
-      <p class="footer__copy">&copy; <span id="year"></span> Agora Events LLC. All rights reserved.</p>
-      <nav class="footer__links" aria-label="Legal">
-        <a href="terms.html">Terms and Conditions</a>
-        <a href="delete-account.html">Delete Account Instructions</a>
-        <a href="support.html">Support</a>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <a href="index.html" class="brand">Agora</a>
+      <span class="site-footer__copy">&copy; <span id="year"></span> Agora Events LLC</span>
+      <div class="spacer"></div>
+      <nav class="site-footer__links" aria-label="Legal">
+        <a href="terms.html">Terms of Service</a>
         <a href="privacy.html">Privacy Policy</a>
+        <a href="delete-account.html">Delete Account</a>
+        <a href="support.html">Support</a>
       </nav>
     </div>
   </footer>
